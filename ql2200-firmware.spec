@@ -2,6 +2,7 @@
 %define		nameprog ql2200
 
 Summary:	Firmware for the QLogic %{nameprog} HBA
+Summary(pl):	Firmware dla HBA QLogic %{nameprog}
 Name:		%{nameprog}-firmware
 Version:	2.02.08
 Release:	0.1
@@ -14,6 +15,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This package contains the firmware for the QLogic %{nameprog} driver.
+
+%description -l pl
+Ten pakiet zawiera firmware dla sterownika QLogic %{nameprog}.
 
 %prep
 %setup -q -c -T
